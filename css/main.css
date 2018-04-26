@@ -1,15 +1,29 @@
 
 body {
+  background: black;
   box-sizing: border-box;
+  font-size: 1em;
+  margin: 0;
 }
 
 header {
-  background-color: #4DD135;
+  height: 8vh;
+  background-color: #5D35D1;
+  border-bottom: rgba(0, 0, 0, 0.746);
+  padding: 1em 0em;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 header > * {
   display: inline-block;
+  position: relative;
   text-align: center;
+}
+
+header div img {
+  width: 50%;
 }
 
 header > h1{
@@ -17,11 +31,25 @@ header > h1{
 }
 
 header > form {
+  height: 5vh;
+  padding: 0.5em;
   width: 70%;
 }
 
 header > navbar {
-  width: 20%;
+  height: 5vh;
+  width: 30%;
+}
+
+header nav a {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+}
+
+header navbar a:nth-child(3) img {
+  width: 30%;
+
 }
 
 .col {
