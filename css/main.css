@@ -1,6 +1,6 @@
 
 body {
-  background: black;
+  /*background: black;*/
   box-sizing: border-box;
   font-size: 1em;
   margin: 0;
@@ -48,12 +48,105 @@ header nav a {
 }
 
 header navbar a:nth-child(3) img {
+  border-radius: 50%;
+  margin: 0 0.5em;
+  max-height: 5vh;
+  position: relative;
+  top: 1em;
   width: 30%;
 
+}
+
+form {
+  background-color: #EFEFEF;
+  margin: 1em;
+  text-align: center;
+}
+
+form input {
+  height: 5vh;
+  width: 80%;
+}
+
+form > * {
+  border: none;
+  background-color: #EFEFEF;
+}
+
+main {
+  position: relative;
+  top: 15vh;
+  z-index: -1;
 }
 
 .col {
   float: left;
   width: 30%;
-  margin: 5vh;
+  margin: 0.5em;
+  min-height: fit-content;
+  max-width: 30%;
+}
+
+.col > .pin {
+  background-color: white;
+  border-radius: 10%;
+  height: auto;
+  margin: 0.5em 1em;
+  text-align: center;
+  width: 90%;
+}
+
+forth {
+
+}
+
+.pin img {
+  border-radius: 10%;
+  height: auto;
+  max-width: 75%;
+}
+
+.pin:hover {
+  opacity: 0.5;
+}
+
+.pin-title {
+  color: rgba(0, 0, 0, 0.746);
+  overflow: auto;
+  padding: 0.5em;
+  position: relative;
+}
+
+pin-title p:nth-child(1) {
+  float: left;
+}
+
+pin-title p:nth-last-child(2) {
+  float: right;
+}
+
+.tag-bar {
+  background-color: rgba(0%,0%,0%,0.08);
+  clear: both;
+  max-height: fit-content;
+  min-height: 15vh;
+  position: relative;
+  text-align: center;
+  top: 12vh;
+  width: 100%;
+}
+
+.tag-bar div {
+  background-color: rgb(46, 145, 184);
+  border-radius: 5%;
+  color: white;
+  display: inline-block;
+  font-family: serif;
+  height: 9vh;
+  padding: 0em 1em;
+  min-width: 5%;
+  position: relative;
+  top: 1em;
+  vertical-align: middle;
+  white-space: nowrap;
 }
