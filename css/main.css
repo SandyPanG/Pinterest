@@ -33,7 +33,7 @@ header > h1{
 header > form {
   height: 5vh;
   padding: 0.5em;
-  width: 70%;
+  width: 60%;
 }
 
 header > navbar {
@@ -43,6 +43,8 @@ header > navbar {
 
 header nav a {
   display: inline-block;
+  position: relative;
+  left: 135vh;
   text-align: center;
   width: 30%;
 }
@@ -59,13 +61,16 @@ header navbar a:nth-child(3) img {
 
 form {
   background-color: #EFEFEF;
-  margin: 1em;
+  display: inline-flex;
+  margin: 1em 1em;
   text-align: center;
+  z-index: -1;
 }
 
 form input {
+  display: block;
   height: 5vh;
-  width: 80%;
+  width: 50%;
 }
 
 form > * {
